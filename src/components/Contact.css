@@ -1,0 +1,125 @@
+.contact-section {
+    background: linear-gradient(180deg, var(--color-bg-dark) 0%, var(--color-bg-darker) 100%);
+}
+
+.cta-wrapper {
+    text-align: center;
+    padding: var(--spacing-3xl) 0;
+    margin-bottom: var(--spacing-3xl);
+    position: relative;
+}
+
+.cta-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, transparent 70%);
+    pointer-events: none;
+    animation: glow 3s ease-in-out infinite;
+}
+
+.cta-wrapper h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-subtitle {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xl);
+    font-family: var(--font-heading);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-3xl);
+    align-items: start;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-info p {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-email a {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
+
+.contact-email a:hover {
+    color: var(--color-primary-light);
+    text-decoration: underline;
+}
+
+.contact-form-wrapper {
+    padding: var(--spacing-xl);
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: var(--spacing-md);
+}
+
+.subscription-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: var(--spacing-xl);
+    text-align: center;
+}
+
+.subscription-wrapper h3 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.subscription-wrapper p {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.subscription-form {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.subscription-form .form-input {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.subscription-form button {
+    flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-wrapper {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .subscription-form {
+        flex-direction: column;
+    }
+
+    .subscription-form button {
+        width: 100%;
+    }
+}

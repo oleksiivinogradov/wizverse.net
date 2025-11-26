@@ -1,0 +1,64 @@
+.wizards-section {
+    background: linear-gradient(180deg, var(--color-bg-dark) 0%, var(--color-bg-darker) 100%);
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.wizards-grid {
+    margin-top: var(--spacing-xl);
+}
+
+.wizard-card {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wizard-card-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+    background: var(--gradient-card);
+}
+
+.wizard-card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.wizard-card:hover .wizard-card-image {
+    transform: scale(1.1) rotate(2deg);
+}
+
+.wizard-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.wizard-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary-light);
+}
+
+.wizard-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+    .wizards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
