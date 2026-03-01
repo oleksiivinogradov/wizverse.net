@@ -42,6 +42,10 @@ const Contact = () => {
                         <div className="contact-email">
                             <a href="mailto:margarita@wizverse.net">margarita@wizverse.net</a>
                         </div>
+                        <div className="contact-socials" style={{ marginTop: '1rem', display: 'flex', gap: '1rem' }}>
+                            <a href="https://t.me/wizverse_group" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-color)', textDecoration: 'underline' }}>Telegram</a>
+                            <a href="https://x.com/wizverse_game" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-color)', textDecoration: 'underline' }}>X (Twitter)</a>
+                        </div>
                     </div>
 
                     <div className="contact-form-wrapper card">

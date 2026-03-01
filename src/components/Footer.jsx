@@ -21,7 +21,8 @@ const Footer = () => {
                 <div className="footer-section">
                     <h4>Links</h4>
                     <ul>
-                        <li><a href="https://x.com/wizverse_game" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                        <li><a href="https://x.com/wizverse_game" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+                        <li><a href="https://t.me/wizverse_group" target="_blank" rel="noopener noreferrer">Telegram</a></li>
                         <li><a href="https://wizverse-1.gitbook.io/wizverse" target="_blank" rel="noopener noreferrer">WhitePaper</a></li>
                         <li><a href="https://dev.wizverse.net/" target="_blank" rel="noopener noreferrer">Play game</a></li>
                     </ul>
